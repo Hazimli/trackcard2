@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071014">
+<meta name="description" content="TrackCard — Smart tracking, everyday security. An investor-ready product showcase.">
+<title>TrackCard — Smart Tracking. Everyday Security.</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="noise"></div>
+
+<header class="nav">
+  <a class="brand" href="#home" aria-label="TrackCard home">
+    <span class="brand-mark">T</span><span>TRACK<span>CARD</span></span>
+  </a>
+  <nav>
+    <a href="#problem">Problem</a>
+    <a href="#solution">Solution</a>
+    <a href="#demo">Demo</a>
+    <a href="#market">Market</a>
+    <a href="#team">Team</a>
+  </nav>
+  <a class="nav-cta" href="#invest">For Investors <span>↗</span></a>
+  <button class="menu" aria-label="Open menu">☰</button>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-copy reveal">
+    <div class="eyebrow"><span class="pulse"></span> SMART WALLET • TRACKCARD</div>
+    <h1>What if your wallet<br><em>could find itself?</em></h1>
+    <p class="hero-text">TrackCard combines an everyday card holder with smart tracking — helping users locate misplaced cards without the usual panic and wasted time.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#demo">Experience the Demo <span>↓</span></a>
+      <button class="btn ghost" id="playHero">▶ Watch Product Film</button>
+    </div>
+    <div class="hero-proof">
+      <div><strong>100</strong><span>people surveyed</span></div>
+      <div><strong>74.9%</strong><span>leaned toward buying</span></div>
+      <div><strong>RM99</strong><span>prototype cost / unit</span></div>
+    </div>
+  </div>
+
+  <div class="hero-product reveal">
+    <div class="orbit orbit-1"></div><div class="orbit orbit-2"></div>
+    <div class="product-glow"></div>
+    <img src="assets/trackcard-front.jpg" alt="TrackCard smart wallet front view">
+    <div class="floating-tag tag-one"><span>●</span> Bluetooth tracking</div>
+    <div class="floating-tag tag-two"><span>◉</span> Buzzer alert</div>
+    <div class="floating-tag tag-three"><span>↯</span> USB-C charging</div>
+  </div>
+</section>
+
+<section class="ticker" aria-label="TrackCard features">
+  <div>SMART TRACKING</div><div>•</div><div>LOST MODE</div><div>•</div><div>BUZZER ALERT</div><div>•</div><div>EVERYDAY SECURITY</div><div>•</div><div>SMART WALLET</div>
+</section>
+
+<section id="problem" class="section problem">
+  <div class="section-kicker">01 / THE PROBLEM</div>
+  <div class="split">
+    <div>
+      <h2>Small cards.<br><span>Big problems.</span></h2>
+      <p>People often lose or misplace student cards, access cards, bank cards and other important cards. Searching manually is time-consuming — and users may not know the last known location.</p>
+      <div class="pain-grid">
+        <article><span>01</span><h3>Misplaced</h3><p>Cards disappear in bags, rooms, classrooms and everyday chaos.</p></article>
+        <article><span>02</span><h3>Time lost</h3><p>Manual searching creates unnecessary stress and wasted time.</p></article>
+        <article><span>03</span><h3>No location</h3><p>Without tracking, users have little clue where to start.</p></article>
+      </div>
+    </div>
+    <div class="problem-visual">
+      <div class="search-ring"></div>
+      <div class="lost-card">CARD?</div>
+      <div class="location-pin">⌖</div>
+      <div class="visual-label">WHERE<br>IS IT?</div>
+    </div>
+  </div>
+</section>
+
+<section id="solution" class="section solution">
+  <div class="section-kicker">02 / THE SOLUTION</div>
+  <div class="center-head">
+    <h2>Meet <span>TrackCard.</span></h2>
+    <p>A practical, user-friendly smart card holder designed to make everyday life easier, safer and more convenient through innovative technology.</p>
+  </div>
+  <div class="feature-layout">
+    <div class="feature-stack">
+      <button class="feature-card active" data-feature="track"><span class="num">01</span><div><h3>Track</h3><p>View the item's last detected location through the mobile application.</p></div></button>
+      <button class="feature-card" data-feature="ring"><span class="num">02</span><div><h3>Ring</h3><p>Activate a buzzer when the card is nearby.</p></div></button>
+      <button class="feature-card" data-feature="lost"><span class="num">03</span><div><h3>Lost Mode</h3><p>Enable Lost Mode notifications when a card goes missing.</p></div></button>
+      <button class="feature-card" data-feature="design"><span class="num">04</span><div><h3>Designed for daily use</h3><p>Compact card holder, smart module, battery and indicator integrated into one design.</p></div></button>
+    </div>
+    <div class="phone-demo">
+      <div class="phone">
+        <div class="speaker"></div>
+        <div class="screen">
+          <div class="app-top"><strong>TrackCard</strong><span>☰</span></div>
+          <div class="connected"><i></i> Connected</div>
+          <div class="device-mini"></div>
+          <div class="location-box"><span class="map-dot">●</span><small>LAST SEEN</small><strong id="locationText">Library, Campus</strong></div>
+          <button class="app-btn ring-btn" id="ringBtn">🔊 Ring Card</button>
+          <button class="app-btn lost-btn" id="lostBtn">⚠ Lost Mode</button>
+          <button class="app-btn location-btn" id="locationBtn">⌖ View Location</button>
+        </div>
+      </div>
+      <div class="phone-caption"><span id="featureLabel">TRACK</span><b id="featureCaption">Last detected location</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="section teardown">
+  <div class="section-kicker">03 / INSIDE THE PRODUCT</div>
+  <div class="split reverse">
+    <div class="image-frame">
+      <img src="assets/trackcard-open.jpg" alt="TrackCard opened showing card slots and tracking module">
+      <div class="image-badge">PROTOTYPE VIEW</div>
+    </div>
+    <div class="teardown-copy">
+      <h2>Smart inside.<br><span>Familiar outside.</span></h2>
+      <p>The prototype brings the tracking hardware into the wallet itself, so users do not have to carry a separate tracker.</p>
+      <div class="parts">
+        <div><b>01</b><span>Card holder / frame</span></div>
+        <div><b>02</b><span>Track Card module</span></div>
+        <div><b>03</b><span>Rechargeable battery</span></div>
+        <div><b>04</b><span>USB-C charging + protection</span></div>
+        <div><b>05</b><span>Buzzer + LED indicator</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="demo" class="section demo-section">
+  <div class="section-kicker">04 / PRODUCT DEMO</div>
+  <div class="demo-head">
+    <div><h2>See the idea<br><span>in motion.</span></h2></div>
+    <p>From a normal-looking wallet to a connected product experience. Press play and picture the moment a misplaced card becomes easy to find.</p>
+  </div>
+  <div class="video-shell">
+    <video id="productVideo" controls playsinline preload="metadata" poster="assets/trackcard-open.jpg">
+      <source src="assets/trackcard-demo.mp4" type="video/mp4">
+      Your browser does not support video playback.
+    </video>
+    <button class="video-play" id="videoPlay">▶</button>
+    <div class="video-caption"><span>TRACKCARD / 01</span><b>Smart tracking. Everyday security.</b></div>
+  </div>
+</section>
+
+<section id="market" class="section market">
+  <div class="section-kicker">05 / MARKET VALIDATION</div>
+  <div class="market-head">
+    <h2>People told us<br><span>there is a need.</span></h2>
+    <p>Our survey of 100 people measured interest in buying TrackCard. The results show a strong positive lean toward the concept.</p>
+  </div>
+  <div class="market-grid">
+    <div class="chart-card">
+      <div class="donut" aria-label="74.9 percent leaned toward buying">
+        <div><strong>74.9%</strong><small>YES / PROBABLY YES</small></div>
+      </div>
+      <div class="legend">
+        <div><i></i><span>Probably yes</span><b>46.9%</b></div>
+        <div><i></i><span>Definitely yes</span><b>28.1%</b></div>
+        <div><i></i><span>Not sure</span><b>21.9%</b></div>
+        <div><i></i><span>Other responses</span><b>3.1%</b></div>
+      </div>
+    </div>
+    <div class="stats-card">
+      <div class="big-stat"><strong>100</strong><span>respondents</span></div>
+      <div class="big-stat"><strong>74.9%</strong><span>positive purchase lean</span></div>
+      <div class="insight"><span>INVESTOR SIGNAL</span><p>The survey indicates meaningful interest, giving the team an early validation point to build on through product testing, pricing validation and market expansion.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section business">
+  <div class="section-kicker">06 / BUSINESS CASE</div>
+  <div class="business-grid">
+    <div class="business-copy">
+      <h2>From prototype<br><span>to opportunity.</span></h2>
+      <p>TrackCard is positioned as more than a card holder: it combines a familiar everyday product with a connected safety feature. The prototype cost breakdown in the team's presentation totals <strong>RM99 per unit</strong>.</p>
+      <div class="roadmap">
+        <div><span>01</span><b>Prototype</b><small>Validate hardware + experience</small></div>
+        <div><span>02</span><b>Pilot</b><small>Test with real users</small></div>
+        <div><span>03</span><b>Scale</b><small>Refine manufacturing + app</small></div>
+      </div>
+    </div>
+    <div class="economics">
+      <div class="price-card">
+        <small>PROTOTYPE COST / UNIT</small>
+        <strong>RM99</strong>
+        <span>Based on the component cost breakdown presented by the team.</span>
+      </div>
+      <div class="ask-card" id="invest">
+        <small>THE INVESTMENT CONVERSATION</small>
+        <h3>Help us turn a working concept into a market-ready product.</h3>
+        <p>We are looking for partners who can contribute to product development, testing, manufacturing, technology and go-to-market execution.</p>
+        <button class="btn primary" id="interestBtn">I'm Interested <span>↗</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="team" class="section team">
+  <div class="section-kicker">07 / THE TEAM</div>
+  <div class="center-head">
+    <h2>Organization<br><span>Structure.</span></h2>
+    <p>Black Canvas Society brings five complementary roles together to turn TrackCard from a concept into a market-ready product.</p>
+  </div>
+
+  <div class="org-chart">
+    <article class="member-card ceo">
+      <div class="member-photo"><img src="assets/team-imaan.jpg" alt="Imaan Ejaz, Chief Executive Officer"></div>
+      <div class="member-info">
+        <small>CHIEF EXECUTIVE OFFICER (CEO)</small>
+        <h3>IMAAN EJAZ</h3>
+        <p>Strategic leadership • Business management</p>
+      </div>
+    </article>
+
+    <div class="org-line vertical top-line"></div>
+
+    <article class="member-card om">
+      <div class="member-photo"><img src="assets/team-azfar.jpg" alt="Azfar Danisz, Operations Manager"></div>
+      <div class="member-info">
+        <small>OPERATIONS MANAGER (OM)</small>
+        <h3>AZFAR DANISZ</h3>
+        <p>Operations • Project coordination</p>
+      </div>
+    </article>
+
+    <div class="org-line vertical middle-line"></div>
+    <div class="org-line horizontal"></div>
+
+    <div class="department-row">
+      <article class="member-card department">
+        <div class="member-photo"><img src="assets/team-hazim.jpg" alt="Hazim, Executive of Technology"></div>
+        <div class="member-info">
+          <small>EXECUTIVE OF TECHNOLOGY</small>
+          <h3>HAZIM</h3>
+          <p>Hardware • Electronics • Integration</p>
+        </div>
+      </article>
+
+      <article class="member-card department featured">
+        <div class="member-photo"><img src="assets/team-qaisara.jpg" alt="Qaisara Izzaty, Executive of Marketing"></div>
+        <div class="member-info">
+          <small>EXECUTIVE OF MARKETING</small>
+          <h3>QAISARA IZZATY</h3>
+          <p>Brand • Digital marketing • Promotion</p>
+        </div>
+      </article>
+
+      <article class="member-card department">
+        <div class="member-photo"><img src="assets/team-afif.jpg" alt="Afif Danish, Executive of Finance"></div>
+        <div class="member-info">
+          <small>EXECUTIVE OF FINANCE</small>
+          <h3>AFIF DANISH</h3>
+          <p>Finance • Budget • Cost analysis</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section vision">
+  <div class="quote-mark">“</div>
+  <h2>Making everyday life<br><span>easier, safer, and more convenient.</span></h2>
+  <p>Our vision is to become a smart card holder that improves everyday life through innovative technology. Our mission is to provide practical smart tracking that helps users locate misplaced cards and manage their belongings more efficiently.</p>
+</section>
+
+<section class="section final-cta">
+  <div class="cta-card">
+    <div class="cta-grid"></div>
+    <div class="section-kicker">08 / LET'S BUILD IT</div>
+    <h2>Ready to talk<br><span>TrackCard?</span></h2>
+    <p>For our Shark Tank pitch, this is the moment where the conversation starts: product, market, team and the opportunity to build what comes next.</p>
+    <div class="cta-actions">
+      <button class="btn primary" id="contactBtn">Start Investor Conversation <span>↗</span></button>
+      <a class="btn ghost" href="#home">Back to top ↑</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="brand"><span class="brand-mark">T</span><span>TRACK<span>CARD</span></span></div>
+  <p>BLACK CANVAS SOCIETY • Smart tracking. Everyday security.</p>
+  <span>© 2026 TrackCard</span>
+</footer>
+
+<div class="modal" id="videoModal" aria-hidden="true">
+  <div class="modal-bg" data-close></div>
+  <div class="modal-card">
+    <button class="modal-close" data-close>×</button>
+    <video id="modalVideo" controls playsinline poster="assets/trackcard-front.jpg">
+      <source src="assets/trackcard-demo.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
